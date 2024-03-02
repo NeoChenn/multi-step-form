@@ -1,0 +1,80 @@
+:root {
+  --Marine-blue: hsl(213, 96%, 18%);
+  --Purplish-blue: hsl(243, 100%, 62%);
+  --Pastel-blue: hsl(228, 100%, 84%);
+  --Light-blue: hsl(206, 94%, 87%);
+  --Strawberry-red: hsl(354, 84%, 57%);
+  --Cool-gray: hsl(231, 11%, 63%);
+  --Light-gray: hsl(229, 24%, 87%);
+  --Magnolia: hsl(217, 100%, 97%);
+  --Alabaster: hsl(231, 100%, 99%);
+  --White: hsl(0, 0%, 100%);
+}
+body {
+  font-family: "Ubuntu";
+  background-color: var(--Light-gray);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#root {
+  background-color: var(--Alabaster);
+  border-radius: 1rem;
+}
+.layout {
+  display: flex;
+  width: 50rem;
+  height: 35.5rem;
+  padding: 1rem;
+}
+nav {
+  background-repeat: no-repeat;
+  width: 17.3rem;
+  display: flex;
+  flex-direction: column;
+}
+nav > .container {
+  font-size: 2rem;
+  display: flex;
+  text-decoration: none;
+  color: var(--White);
+  font-size: 10px;
+  height: 3rem;
+  width: 8.3rem;
+  padding-left: 2rem;
+  padding-top: 2rem;
+  margin-bottom: -1rem;
+  align-items: center;
+}
+
+.formButton {
+  background-color: transparent;
+  border-radius: 100%;
+  cursor: pointer;
+  width: 2rem;
+  height: 2rem;
+  border-width: 1px;
+  border-color: white;
+  color: white;
+  margin-right: 1rem;
+  font-weight: 900;
+}
+
+.step {
+  margin-bottom: -0.9rem;
+  font-weight: 1;
+  color: var(--Light-gray);
+}
+.description {
+  font-size: 0.8rem;
+}
+.active > button {
+  color: black;
+  background-color: var(--Light-blue);
+}
+.step1Form{
+  display: flex;
+  flex-direction: column;
+  
+}
