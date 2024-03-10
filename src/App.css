@@ -73,8 +73,294 @@ nav > .container {
   color: black;
   background-color: var(--Light-blue);
 }
-.step1Form{
+.stepForm {
   display: flex;
   flex-direction: column;
-  
+}
+.stepForm {
+  padding-left: 3rem;
+  padding-top: 1rem;
+}
+.stepForm > h1 {
+  color: var(--Marine-blue);
+}
+.formDescription {
+  margin-top: -0.7rem;
+  color: var(--Cool-gray);
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+input {
+  padding: 0.7rem;
+  border-radius: 5px;
+  border-width: 1px;
+  background-color: transparent;
+}
+input:focus {
+  border: 1px solid var(--Purplish-blue);
+  outline: transparent;
+}
+input:hover {
+  cursor: pointer;
+}
+button {
+  cursor: pointer;
+}
+.inputTop {
+  display: flex;
+  padding-top: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 0.5rem;
+}
+.inputTop > p {
+  color: var(--Strawberry-red);
+  font-size: 14px;
+  margin-bottom: -1px;
+  margin-top: -1px;
+}
+label {
+  color: var(--Marine-blue);
+  font-size: 14px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  padding-bottom: 2rem;
+}
+.backStep {
+  border: 0px;
+  background-color: transparent;
+  padding-left: 3rem;
+  color: var(--Cool-gray);
+}
+.backStep:hover {
+  color: var(--Marine-blue);
+}
+.nextStep {
+  border: 0px;
+  background-color: var(--Marine-blue);
+  color: var(--Alabaster);
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+}
+.nextStep:hover {
+  background-color: darkblue;
+}
+
+.planContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.radioContainer {
+  margin-top: 1.5rem;
+  position: relative;
+  width: 6rem;
+  border: 1px solid var(--Cool-gray);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-right: 0.8rem;
+}
+.radioContainer input {
+  position: absolute;
+  height: 105%;
+  width: 100%;
+  opacity: 0;
+  left: -5px;
+  top: -10px;
+}
+.radioContainer:hover {
+  border-color: var(--Purplish-blue);
+}
+.radioButton {
+  display: flex;
+  flex-direction: column;
+}
+.radioButton h4 {
+  margin-bottom: -7px;
+  padding-top: 1.4rem;
+  color: var(--Marine-blue);
+}
+.radioButton p {
+  color: var(--Cool-gray);
+  margin-bottom: -1px;
+}
+.radioContainer:has(input:checked) {
+  background-color: var(--Magnolia);
+  border-color: var(--Purplish-blue);
+  outline: red;
+}
+.planSwitch {
+  display: flex;
+  background-color: var(--Magnolia);
+  border-radius: 10px;
+  margin-top: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.planSwitch button {
+  position: relative;
+  background-color: var(--Marine-blue);
+  border: 0px;
+  height: 1.25rem;
+  width: 2.7rem;
+  border-radius: 1rem;
+  margin: 1rem;
+}
+.planSwitch button span {
+  position: relative;
+  color: white;
+  background-color: white;
+  border-radius: 100%;
+  width: 100%;
+}
+.monthly {
+  left: -0.7rem;
+}
+.yearly {
+  left: 0.7rem;
+}
+.planSwitch p {
+  color: var(--Cool-gray);
+}
+h5 {
+  position: relative;
+  margin-bottom: -10px;
+  bottom: 10px;
+}
+.addonContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.checkboxContainer {
+  position: relative;
+  display: flex;
+  border: 1px solid var(--Cool-gray);
+  margin-top: 1rem;
+  border-radius: 7px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.checkboxContainer:hover {
+  border-color: var(--Purplish-blue);
+}
+
+.checkboxContainer input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.checkboxContainer label {
+  padding-right: 4.7rem;
+}
+
+.labelTrue {
+  margin-left: -1.5rem;
+}
+
+.checkmark img {
+  border: 1px solid var(--Cool-gray);
+  width: 1rem;
+  height: 1rem;
+  margin: 0px 1rem;
+}
+
+#oddContainer {
+  margin-right: 1.5rem;
+  margin-left: 1.8rem;
+}
+
+.addonH4 {
+  margin-bottom: -10px;
+  color: var(--Marine-blue);
+}
+.addonP {
+  color: var(--Cool-gray);
+}
+.addonPrice {
+  font-size: 13px;
+  color: var(--Purplish-blue);
+  padding-right: 1rem;
+}
+
+.oddAddonPrice {
+  font-size: 13px;
+  color: var(--Purplish-blue);
+  margin-left: 4rem;
+  padding-right: 1.5rem;
+}
+.checkboxContainer:has(input:checked) {
+  border-color: var(--Purplish-blue);
+  background-color: var(--Magnolia);
+}
+input:checked + .checkmark img {
+  background-color: var(--Purplish-blue);
+  border: 0px;
+}
+.summaryContainer {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+.summary {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--Magnolia);
+  border-radius: 10px;
+  width: 27rem;
+}
+.subSummary {
+  display: flex;
+  justify-content: space-between;
+  margin: 0px 1rem;
+  align-items: center;
+}
+.subSummary h2 {
+  color: var(--Purplish-blue);
+}
+.mainSummary {
+  display: flex;
+  flex-direction: column;
+}
+.mainSummary span {
+  background-color: var(--Light-gray);
+  width: 25.2rem;
+  height: 1px;
+  margin-left: 1rem;
+}
+#centralSummary {
+  color: var(--Marine-blue);
+}
+.subSummaryText {
+  color: var(--Cool-gray);
+}
+.subSummaryPrice {
+  color: var(--Marine-blue);
+}
+#thankYou {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 1.8rem;
+}
+#thankYou img {
+  width: 5rem;
+  padding-bottom: 0.5rem;
+}
+#thankYouText {
+  padding-top: 0.5rem;
+  width: 24rem;
+  text-align: center;
+  word-spacing: 1px;
+  line-height: 22px;
+  font-size: 16px;
 }

@@ -13,7 +13,7 @@ export default function Layout({ setStep }) {
               return isActive ? "active" : "";
             }}
           >
-            <button className="formButton">1</button>
+            <button className="formButton" onClick={e => e.preventDefault()}>1</button>
           </NavLink>
           <div>
             <p className="step">STEP 1</p>
@@ -27,7 +27,7 @@ export default function Layout({ setStep }) {
               return isActive ? "active" : "";
             }}
           >
-            <button className="formButton">2</button>
+            <button className="formButton" onClick={e => e.preventDefault()}>2</button>
           </NavLink>
           <div>
             <p className="step">STEP 2</p>
@@ -41,8 +41,9 @@ export default function Layout({ setStep }) {
               return isActive ? "active" : "";
             }}
           >
-            <button className="formButton">3</button>
+            <button className="formButton" onClick={e => e.preventDefault()}>3</button>
           </NavLink>
+
           <div>
             <p className="step">STEP 3</p>
             <h4 className="description">ADD-ONS</h4>
@@ -55,7 +56,7 @@ export default function Layout({ setStep }) {
               return isActive ? "active" : "";
             }}
           >
-            <button className="formButton">4</button>
+            <button className="formButton" onClick={e => e.preventDefault()}>4</button>
           </NavLink>
           <div>
             <p className="step">STEP 4</p>
