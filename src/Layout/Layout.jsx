@@ -5,7 +5,6 @@ import bgImage from "../assets/images/bg-sidebar-desktop.svg";
 export default function Layout({ setStep }) {
   return (
     <div className="layout">
-      <img src={bgImage}></img>
       <nav style={{ backgroundImage: `url(${bgImage})` }}>
         <div className="container">
           <NavLink
