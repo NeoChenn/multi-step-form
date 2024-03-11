@@ -23,10 +23,14 @@ body {
   border-radius: 1rem;
 }
 .layout {
+  position: relative;
   display: flex;
   width: 50rem;
   height: 35.5rem;
   padding: 1rem;
+}
+.bgImage {
+  position: absolute;
 }
 nav {
   background-repeat: no-repeat;
@@ -46,6 +50,7 @@ nav > .container {
   padding-top: 2rem;
   margin-bottom: -1rem;
   align-items: center;
+  z-index: 1;
 }
 
 .formButton {
